@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1407px;
+    margin: 0 auto;
+}
+
+/* =========================
+Nav part start
+============================ */
+
+nav .logo {
+    width: 20%;
+}
+
+nav .nav-item {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .button {
+    width: 20%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .button a {
+    background: #ff5538;
+    padding: 14px 28px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 18px;
+}
+
+nav .nav_main {
+    display: flex;
+}
+
+nav .nav-item ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 48px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav .nav-item ul li i {
+    margin-left: 8px;
+}
+/* =========================
+Nav part End
+============================ */
+
+/* =========================
+Banner part start
+============================ */
+
+.banner {
+    background: url(../images/banner.jpg);
+    height: 700px;
+}
+.banner h1 {
+    font-weight: 700;
+    font-size: 64px;
+    font-family: "Poppins", sans-serif;
+    color: #29313d;
+    text-transform: capitalize;
+    width: 771px;
+    background: red;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 130%;
+}
+
+/* =========================
+Banner part end
+============================ */
