@@ -21,6 +21,13 @@ a {
 /* =========================
 Nav part start
 ============================ */
+nav{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 10px;
+    left: 0;
+}
 
 nav .logo {
     width: 20%;
@@ -47,6 +54,14 @@ nav .button a {
     font-size: 18px;
     color: #fff;
     border-radius: 18px;
+    border: 1px solid transparent;
+    transition: all linear .4s;
+}
+
+nav .button a:hover {
+    background: transparent;
+    border: 1px solid #ff5538;
+    color: #ff5538;
 }
 
 nav .nav_main {
@@ -76,7 +91,8 @@ Banner part start
 
 .banner {
     background: url(../images/banner.jpg);
-    height: 700px;
+    padding: 270px 0;
+    position: relative;
 }
 .banner h1 {
     font-weight: 700;
@@ -85,10 +101,121 @@ Banner part start
     color: #29313d;
     text-transform: capitalize;
     width: 771px;
-    background: red;
     text-align: center;
     margin: 0 auto;
     line-height: 130%;
+    margin-bottom: 16px;
+}
+.banner p {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    color: #29313d;
+    width: 547px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 200%;
+    margin-bottom: 44px;
+}
+
+.banner .button {
+    text-align: center;
+}
+.banner .button a {
+    background: #ff5538;
+    padding: 14px 28px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 18px;
+    margin: 0 12px;
+    border: 1px solid transparent;
+    transition: all linear 0.4s;
+}
+
+.banner .button a:hover {
+    background: transparent;
+    border: 1px solid #ff5538;
+    color: #ff5538;
+}
+
+.banner .circle_shape {
+    position: absolute;
+    left: 765px;
+    width: 112px;
+    height: 112px;
+    border: 1px solid #ff5538;
+    border-radius: 50%;
+    top: 145px;
+    animation: rotate 6s infinite linear;
+}
+
+.banner .inner_bubble {
+    position: absolute;
+    left: 7px;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background: #ff5538;
+    border-radius: 50%;
+}
+.banner .inner_bubble2 {
+    position: absolute;
+    left: 148px;
+    top: 305px;
+    width: 25px;
+    height: 25px;
+    background: rgb(93, 47, 200);
+    border-radius: 50%;
+    -webkit-box-shadow: 1px -3px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px -3px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px -3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.banner .dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #c087ee;
+    border-radius: 50%;
+    right: 658px;
+    top: 147px;
+    animation: tb 4s infinite linear alternate;
+}
+
+@keyframes tb {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+.banner .cross {
+    position: absolute;
+    font-size: 20px;
+    top: 207px;
+    right: 360px;
+    color: #c087ee;
+    animation: rotate 6s infinite linear;
+}
+.banner .cross2 {
+    position: absolute;
+    font-size: 20px;
+    top: 207px;
+    left: 360px;
+    color: #c087ee;
+    animation: rotate 6s infinite linear;
 }
 
 /* =========================
