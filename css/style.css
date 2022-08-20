@@ -18,10 +18,30 @@ a {
     margin: 0 auto;
 }
 
+.title h4 {
+    color: #ff5538;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    line-height: 140%;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.title h2 {
+    color: #29313d;
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    line-height: 140%;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+    width: 449px;
+}
+
 /* =========================
 Nav part start
 ============================ */
-nav{
+nav {
     position: absolute;
     width: 100%;
     z-index: 1;
@@ -55,7 +75,7 @@ nav .button a {
     color: #fff;
     border-radius: 18px;
     border: 1px solid transparent;
-    transition: all linear .4s;
+    transition: all linear 0.4s;
 }
 
 nav .button a:hover {
@@ -79,7 +99,7 @@ nav .nav-item ul {
 }
 
 nav .nav-item ul li i {
-    margin-left: 8px;
+    margin-left: 5px;
 }
 /* =========================
 Nav part End
@@ -188,8 +208,8 @@ Banner part start
     height: 20px;
     background: #c087ee;
     border-radius: 50%;
-    right: 658px;
-    top: 147px;
+    right: 557px;
+    top: 179px;
     animation: tb 4s infinite linear alternate;
 }
 
@@ -219,5 +239,155 @@ Banner part start
 }
 
 /* =========================
-Banner part end
+        Banner part end
 ============================ */
+
+/* ============================
+     Services Part Start
+================================ */
+
+.service .service_item {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.service .service_item .item {
+    width: 32%;
+    height: 300px;
+    background: #fff;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-box-shadow: 0px 7px 42px 21px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0px 7px 42px 21px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 7px 42px 21px rgba(0, 0, 0, 0.07);
+}
+
+.service .service_item .item h3 {
+    font-size: 21px;
+    font-weight: 600;
+    color: #29313d;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    line-height: 160%;
+    font-family: "Poppins", sans-serif;
+}
+
+.service .service_item .item p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #29313d;
+    line-height: 200%;
+    font-family: "Nunito", sans-serif;
+}
+
+/* ============================
+        Services Part End
+================================ */
+
+/* ==============================
+Digital life Start
+================================ */
+.digital_inner {
+    display: flex;
+}
+
+.digital_inner .digitl_img {
+    width: 50%;
+    height: 300px;
+}
+.digital_inner .digitl_img img {
+    width: 118%;
+    position: relative;
+    left: 0px;
+    top: 80px;
+}
+.digital_inner .digitl_text {
+    width: 50%;
+    height: 300px;
+    background: url(../images/digitalLife-text-bg.png) no-repeat;
+    background-size: cover;
+    padding: 100px 185px;
+}
+
+.digital_inner .digitl_text h3{
+    color: #29313D;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 140%;
+    width: 570px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+.digital_inner .digitl_text p{
+    color: #29313D;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    width: 501px;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 40px;
+}
+
+
+.digital_inner .digitl_text a {
+    background: #ff5538;
+    padding: 14px 28px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 18px;
+    margin: 0 12px;
+    border: 1px solid transparent;
+    transition: all linear 0.4s;
+}
+
+.digital_inner .digitl_text a:hover {
+    background: transparent;
+    border: 1px solid #ff5538;
+    color: #ff5538;
+}
+
+.digitalLife{
+    position: relative;
+}
+
+.digitalLife .digital_circle_shape {
+    position: absolute;
+    left: 550px;
+    width: 112px;
+    height: 112px;
+    border: 1px solid #ff5538;
+    border-radius: 50%;
+    top: 182px;
+    animation: rotate2 10s infinite linear;
+    z-index: -1;
+}
+
+.digitalLife .digital_inner_bubble {
+    position: absolute;
+    left: 7px;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background: #ff5538;
+    border-radius: 50%;
+    animation: rotate2 10s infinite linear;
+}
+
+
+@keyframes rotate2 {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ==============================
+Digital life End
+================================ */
