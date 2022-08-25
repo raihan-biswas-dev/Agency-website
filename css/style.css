@@ -23,7 +23,7 @@ a {
     font-size: 20px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
-    line-height: 140%;
+    line-height: 1;
     text-transform: capitalize;
     margin-bottom: 10px;
 }
@@ -162,7 +162,7 @@ Banner part start
 
 .banner .circle_shape {
     position: absolute;
-    left: 765px;
+    left: 588px;
     width: 112px;
     height: 112px;
     border: 1px solid #ff5538;
@@ -218,7 +218,7 @@ Banner part start
         transform: translateY(-50px);
     }
     to {
-        transform: translateY(0px);
+        transform: translateY(50px);
     }
 }
 .banner .cross {
@@ -290,6 +290,7 @@ Banner part start
 /* ==============================
 Digital life Start
 ================================ */
+
 .digital_inner {
     display: flex;
 }
@@ -299,21 +300,22 @@ Digital life Start
     height: 300px;
 }
 .digital_inner .digitl_img img {
-    width: 118%;
+    width: 108%;
     position: relative;
     left: 0px;
-    top: 80px;
+    top: 74px;
+    height: 409px;
 }
 .digital_inner .digitl_text {
     width: 50%;
     height: 300px;
     background: url(../images/digitalLife-text-bg.png) no-repeat;
     background-size: cover;
-    padding: 100px 185px;
+    padding: 120px 185px;
 }
 
-.digital_inner .digitl_text h3{
-    color: #29313D;
+.digital_inner .digitl_text h3 {
+    color: #29313d;
     font-weight: 600;
     font-size: 35px;
     line-height: 140%;
@@ -321,8 +323,8 @@ Digital life Start
     font-family: "Poppins", sans-serif;
     margin-bottom: 20px;
 }
-.digital_inner .digitl_text p{
-    color: #29313D;
+.digital_inner .digitl_text p {
+    color: #29313d;
     font-weight: 400;
     font-size: 18px;
     line-height: 200%;
@@ -330,7 +332,6 @@ Digital life Start
     font-family: "Nunito", sans-serif;
     margin-bottom: 40px;
 }
-
 
 .digital_inner .digitl_text a {
     background: #ff5538;
@@ -351,7 +352,7 @@ Digital life Start
     color: #ff5538;
 }
 
-.digitalLife{
+.digitalLife {
     position: relative;
 }
 
@@ -378,7 +379,6 @@ Digital life Start
     animation: rotate2 10s infinite linear;
 }
 
-
 @keyframes rotate2 {
     from {
         transform: rotate(0);
@@ -390,4 +390,144 @@ Digital life Start
 
 /* ==============================
 Digital life End
+================================ */
+
+/* ==============================
+work life start
+================================ */
+
+.work-part {
+    padding: 120px 0;
+    position: relative;
+}
+
+.work-shape {
+    position: absolute;
+    left: -1px;
+    top: -214px;
+    transform: rotate(359deg);
+    z-index: -1;
+}
+
+.work-part .work-main {
+    display: flex;
+}
+
+.work-part .work-main .text {
+    width: 80%;
+}
+.work-part .work-main .title h2 {
+    width: 693px;
+}
+
+.work-part .button a {
+    background: #ff5538;
+    padding: 14px 28px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 18px;
+    margin: 0 12px;
+    border: 1px solid transparent;
+    transition: all linear 0.4s;
+}
+
+.work-part .button a:hover {
+    background: transparent;
+    border: 1px solid #ff5538;
+    color: #ff5538;
+}
+
+.work-part .work-main .btn {
+    width: 20%;
+}
+
+.work-item {
+    display: flex;
+    column-gap: 25px;
+    margin-bottom: 30px;
+}
+.work-part .work-item .small-item {
+    width: 40%;
+    position: relative;
+}
+
+.work-part .work-item img {
+    width: 100%;
+    height: 335px;
+}
+.work-part .work-item .text-box {
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 7px 42px 21px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0px 7px 42px 21px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 7px 42px 21px rgba(0, 0, 0, 0.07);
+}
+
+.work-part .work-item .text-box h3 {
+    color: #29313d;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    font-family: "Poppins", sans-serif;
+}
+
+.work-part .work-item .text-box a {
+    color: #ff5538;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    font-family: "Nunito", sans-serif;
+}
+
+.work-part .work-item .large-item {
+    width: 60%;
+    position: relative;
+}
+
+/* bubble -----1 */
+
+.digitalLife .dot-2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #c087ee;
+    border-radius: 50%;
+    right: 557px;
+    top: 179px;
+    animation: around 10s infinite linear alternate;
+}
+
+@keyframes around {
+    0% {
+        transform: translateX(0) translateY(0px);
+    }
+    20% {
+        transform: translateX(300px) translateY(400px);
+    }
+    40% {
+        transform: translateX(500px) translateY(150px);
+    }
+    66% {
+        transform: translateX(80px) translateY(500px);
+    }
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+/* bubble-----2 */
+
+/* bubble-----3 */
+
+/* bubble-----4 */
+
+/* ==============================
+work life End
 ================================ */
