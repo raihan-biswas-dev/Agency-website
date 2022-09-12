@@ -522,12 +522,69 @@ work life start
     }
 }
 
-/* bubble-----2 */
-
-/* bubble-----3 */
-
-/* bubble-----4 */
 
 /* ==============================
 work life End
+================================ */
+
+/* ==============================
+Project life start
+================================ */
+
+
+
+.project-part {
+    padding: 120px 0;
+    background: #FDF9F8;
+}
+.project-part .project-inner{
+display: flex;
+box-sizing: border-box;
+}
+
+
+
+.project-part .counter {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 27px;
+}
+.project-part .item {
+    width: 47%;
+    height: 200px;
+    background: #fff;
+    color: #29313d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-part .text {
+    text-align: center;
+}
+
+.project-part .counter .item h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 140%;
+    font-family: "Poppins", sans-serif;
+}
+.project-part .counter .item p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    font-family: "Nunito", sans-serif;
+}
+
+
+.project-part .project-text {
+    width: 60%;
+    background: #ff5538;
+    height: 400px;
+}
+
+/* ==============================
+Project life End
 ================================ */
